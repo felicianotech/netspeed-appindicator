@@ -1,0 +1,11 @@
+[Unit]
+Description=NetSpeed AppIndicator
+After=default.target
+
+[Service]
+ExecStart=/usr/local/bin/netspeed-appindicator
+Restart=on-failure
+SyslogIdentifier=netspeed-appindicator
+
+[Install]
+WantedBy=multi-user.target
